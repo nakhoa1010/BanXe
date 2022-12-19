@@ -17,10 +17,12 @@ if(!empty($_POST)){
         $ghichu = $_POST['ghichu'];
         $soluong = $_GET['soluong']; 
         $tensp = $_GET['tensp'];  
+        $gia = $_GET['gia']; 
+        $tongtien = $soluong * $gia;
     }
     
     if(!empty($hovaten) && !empty($sdt) && !empty($email) && !empty($diachi)){
-        $sql = 'INSERT INTO donhang VALUES (NULL,"'.$tensp.'",'.$soluong.',"'.$hovaten.'","'.$sdt.'","'.$email.'","'.$diachi.'","'.$ghichu.'")';
+        $sql = 'INSERT INTO donhang VALUES (NULL,"'.$tensp.'",  '.$soluong.',"'.$tongtien.'","'.$hovaten.'","'.$sdt.'","'.$email.'","'.$diachi.'","'.$ghichu.'")';
     execute($sql);
 
     header('Location: xemdonhang.php');
