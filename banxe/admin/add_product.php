@@ -161,7 +161,7 @@ if(!empty($_POST)){
                                                             $categoryList = executeResult($sql);
                                                             foreach ($categoryList as $item)
                                                             {
-                                                                echo '<option> '.$item['tenhang'].' </option>';                                            
+                                                                echo '<option value="'.$item['tenhang'].'">'.$item['tenhang'].' </option>';                                            
                                                             }
                                                     ?> 
                                                     </select>
