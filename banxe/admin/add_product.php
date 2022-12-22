@@ -33,7 +33,7 @@ if(!empty($_POST)){
     }
     
     if(!empty($name) && !empty($gia)){
-        $sql = 'INSERT INTO sanpham VALUES (NULL,"'.$name.'",'.$gia.',"'.$hinhanh.'","'.$kichthuoc.'","'.$chieucaoyen.'","'.$kichthuocbanh.'","'.$dongco.'","'.$cc.'","'.$congsuat.'","'.$ccnhot.'","'.$ccxang.'","'.$phanh.'","'.$hopso.'","'.$tenhang.'")';
+        $sql = 'INSERT INTO sanpham VALUES (NULL,"'.$name.'",'.$gia.',"'.$hinhanh.'","'.$kichthuoc.'","'.$chieucaoyen.'","'.$kichthuocbanh.'","'.$dongco.'","'.$cc.'","'.$congsuat.'","'.$ccnhot.'","'.$ccxang.'","'.$phanh.'","'.$hopso.'",NULL,"'.$tenhang.'")';
     execute($sql);
 
     header('Location: product.php?tenhang='.$tenhang.'');
