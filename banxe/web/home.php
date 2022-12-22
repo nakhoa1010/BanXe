@@ -12,7 +12,7 @@ require_once ('../db/dbhelper.php');
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title> MOWO - MOTO WORLD </title>
+  <title> XSGC - Xe Xấu Giá Cao </title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap core CSS -->
   <link href="../CSS/bootstrap.min.css" rel="stylesheet">
